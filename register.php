@@ -1,18 +1,21 @@
 <?php
-include_once('connection.php');
-// include_once('connection.php');
-$first_name = $last_name =$batch = $mail =  "";
-if($_SERVER['REQUEST_METHOD'] == 'POST'){
+include 'connection.php';
+
+// $first_name = $last_name =$batch = $mail = $pass= "";
+if(isset($_POST['register'])){
      $first_name = $_POST['Fname'];
      $last_name =  $_POST['Lname'];
      $batch = $_POST['faculty'];
-    //  $s_year = $_POST['year'];
      $mail = $_POST['Email'];
+     $pass = $_POST['password'];
+     $pass_code = password_hash($pass,PASSWORD_BCRYPT);
+    $data = "INSERT INTO `register`(`Fname`, `Lname`, `faculty`, `email`, `password`) VALUES ('$first_name','$last_name','$batch','$mail','$pass_code')";
 
-    $data = ("INSERT INTO register (Fname, Lname, faculty, Email ) VALUES ('$first_name', '$last_name', '$batch', '$mail')");
-
-    if (mysqli_query($conn, $data)){
-
+    $result = mysqli_query($conn,$data);
+    
+    
+    if ($result){
+        
         echo 'registered';
         header("location: login.php?=registered");
 

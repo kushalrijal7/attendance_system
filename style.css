@@ -228,7 +228,7 @@ h3{
 .college-col img{
     width: 100%;
     display: block;
-    height: 400px;
+    height: 300px;
 }
 
 .layer  {
@@ -571,16 +571,14 @@ span
 	color:white;
 	font-size: 15;
 }
-
-.admin{
-    /* padding:2%; */
-    margin-top: 90px;
-    margin-left: 20%;
-    /* position: centre; */
-    color: #fff;
-    text-size-adjust: 15px;
+.form-box form .portal{
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
 
 }
+
 .login-form{
     /* margin-top: 15%;
     width: 450px;
@@ -653,9 +651,6 @@ span
 .login-form form .extra a:first-child{
     color: blue;
 }
-
-
-
 
 
 
