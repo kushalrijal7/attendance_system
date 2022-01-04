@@ -6,6 +6,23 @@ the user but the credentiality will be only available to the admin pannel person
 so that common user won't be able to reconfigure the system.
 In this system admin is able to see the absent or present information
 of the student according to the real date.
+# Database detail:
+To be able to run this website
+Some term must be inserted in the local server database
+i.e
+you can go to the localhost server using following https
+https://localhost/phpmyadmin/
+And the following database must be created
+-Database having name: student
+And inside database name student you must create table with table_name and there attributes(id,name,password.....) respectively as:
+-admin(attributes,...)
+-attendance(attributes,...)
+-register(attributes,...)
+-student_table(attributes,...)
+-users(attributes,...)
+Here is the image of it:
+![Screenshot (406)](https://user-images.githubusercontent.com/64521801/148041810-9d61a5f4-8521-47a4-a7c0-b1521f35c0e0.png)
+
 # Features_available:
 # index_page:
 ![Screenshot (400)](https://user-images.githubusercontent.com/64521801/148039485-a051e575-793b-4d41-b887-228efde8180f.png)
