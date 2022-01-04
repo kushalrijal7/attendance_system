@@ -10,16 +10,18 @@ of the student according to the real date.
 To be able to run this website
 Some term must be inserted in the local server database
 i.e
-you can go to the localhost server using following https
+you can go to the localhost server using following 
+# https:
 https://localhost/phpmyadmin/
+#
 And the following database must be created
--Database having name: student
+ # Database having name: student
 And inside database name student you must create table with table_name and there attributes(id,name,password.....) respectively as:
--admin(attributes,...)
--attendance(attributes,...)
--register(attributes,...)
--student_table(attributes,...)
--users(attributes,...)
+# admin(attributes,...)
+# attendance(attributes,...)
+# register(attributes,...)
+# student_table(attributes,...)
+# users(attributes,...)
 Here is the image of it:
 ![Screenshot (406)](https://user-images.githubusercontent.com/64521801/148041810-9d61a5f4-8521-47a4-a7c0-b1521f35c0e0.png)
 
